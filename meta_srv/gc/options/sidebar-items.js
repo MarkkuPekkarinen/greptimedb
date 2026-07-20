@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["EXPERIMENTAL_SOFT_DROP_ENABLED","TICKER_INTERVAL"],"struct":["ExperimentalSoftDropGcOptions","GcSchedulerOptions"]};
