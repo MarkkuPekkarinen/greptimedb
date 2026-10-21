@@ -663,8 +663,8 @@ dependencies = [
 
 [[package]]
 name = "arrow-pg"
-version = "0.15.0"
-source = "git+https://github.com/datafusion-contrib/datafusion-postgres.git?rev=ffb14a52b3d7c7489559812e1ec38096f225ce93#ffb14a52b3d7c7489559812e1ec38096f225ce93"
+version = "0.16.0"
+source = "git+https://github.com/datafusion-contrib/datafusion-postgres.git?rev=3ae0a6cb30b1c5131687f4637247ff4f84ac11e4#3ae0a6cb30b1c5131687f4637247ff4f84ac11e4"
 dependencies = [
  "arrow 59.2.0",
  "arrow-schema 59.2.0",
@@ -2673,6 +2673,7 @@ dependencies = [
  "common-wal",
  "common-workload",
  "datafusion-common",
+ "datafusion-expr",
  "datatypes",
  "deadpool",
  "deadpool-postgres",
@@ -4233,8 +4234,8 @@ dependencies = [
 
 [[package]]
 name = "datafusion-pg-catalog"
-version = "0.18.3"
-source = "git+https://github.com/datafusion-contrib/datafusion-postgres.git?rev=ffb14a52b3d7c7489559812e1ec38096f225ce93#ffb14a52b3d7c7489559812e1ec38096f225ce93"
+version = "0.19.0"
+source = "git+https://github.com/datafusion-contrib/datafusion-postgres.git?rev=3ae0a6cb30b1c5131687f4637247ff4f84ac11e4#3ae0a6cb30b1c5131687f4637247ff4f84ac11e4"
 dependencies = [
  "arrow-pg",
  "async-trait",
@@ -6082,7 +6083,7 @@ dependencies = [
 [[package]]
 name = "greptime-proto"
 version = "0.1.0"
-source = "git+https://github.com/GreptimeTeam/greptime-proto.git?rev=9533078d6fd4bdaddbca0750cb9bf7ad64b2e568#9533078d6fd4bdaddbca0750cb9bf7ad64b2e568"
+source = "git+https://github.com/GreptimeTeam/greptime-proto.git?rev=acb247415b8f4c2f0750783dab4e1f38c71f5860#acb247415b8f4c2f0750783dab4e1f38c71f5860"
 dependencies = [
  "prost 0.14.1",
  "prost-types 0.14.1",
@@ -10488,9 +10489,11 @@ dependencies = [
  "common-error",
  "common-macro",
  "common-meta",
+ "common-time",
  "criterion 0.7.0",
  "datafusion-common",
  "datafusion-expr",
+ "datafusion-optimizer",
  "datafusion-physical-expr",
  "datatypes",
  "moka",
@@ -10708,9 +10711,9 @@ dependencies = [
 
 [[package]]
 name = "pgwire"
-version = "0.41.0"
+version = "0.42.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c667f8f4046889d52ed11e17aae954b1816d3df48dd23bdebcf199cef332df93"
+checksum = "1452e6541bcc64e166ff9d350c25c09334c0c80e8f60fde5e36ff81768eeaa55"
 dependencies = [
  "async-trait",
  "aws-lc-rs",
@@ -14412,6 +14415,7 @@ dependencies = [
  "common-time",
  "common-wal",
  "datafusion-common",
+ "datafusion-execution",
  "datafusion-expr",
  "datafusion-physical-plan",
  "datatypes",
